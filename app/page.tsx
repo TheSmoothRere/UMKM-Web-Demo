@@ -87,7 +87,7 @@ const contactInfo = [
   { icon: Location01Icon, label: "Alamat", value: "Jl. Karamat No. 123, Cirebon, Jawa Barat" },
 ]
 
-function StatCard({ value, label, icon }: { value: string; label: string; icon: typeof Store04Icon }) {
+function StatCard({ value, label, icon }: Readonly<{ value: string; label: string; icon: typeof Store04Icon }>) {
   return (
     <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-5 ring-1 ring-charcoal/5 flex items-center gap-4">
       <div className="size-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
+      <Separator className="bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* TENTANG */}
       <AnimatedReveal id="tentang">
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-terracotta/20 to-gold/20 ring-1 ring-charcoal/5 flex items-center justify-center overflow-hidden">
+                <div className="aspect-4/5 rounded-3xl bg-linear-to-br from-terracotta/20 to-gold/20 ring-1 ring-charcoal/5 flex items-center justify-center overflow-hidden">
                   <div className="text-center p-8">
                     <div className="size-20 rounded-2xl bg-terracotta/10 flex items-center justify-center mx-auto mb-4">
                       <HugeiconsIcon icon={Store04Icon} size={36} className="text-terracotta" />
@@ -217,7 +217,7 @@ export default function Home() {
         </section>
       </AnimatedReveal>
 
-      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
+      <Separator className="bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* LAYANAN */}
       <AnimatedReveal id="layanan">
@@ -254,7 +254,7 @@ export default function Home() {
         </section>
       </AnimatedReveal>
 
-      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
+      <Separator className="bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* PRODUK */}
       <AnimatedReveal id="produk">
@@ -275,7 +275,7 @@ export default function Home() {
                   key={product.title}
                   className="group ring-0 bg-white rounded-2xl overflow-hidden border border-charcoal/5 hover:shadow-lg hover:shadow-terracotta/5 transition-all duration-300"
                 >
-                  <div className="aspect-[4/3] bg-gradient-to-br from-terracotta/10 to-gold/10 flex items-center justify-center relative overflow-hidden rounded-t-lg">
+                  <div className="aspect-4/3 bg-linear-to-br from-terracotta/10 to-gold/10 flex items-center justify-center relative overflow-hidden rounded-t-lg">
                     <div className="size-16 rounded-xl bg-terracotta/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                       <HugeiconsIcon icon={ShoppingBag01Icon} size={28} className="text-terracotta" />
                     </div>
@@ -297,7 +297,7 @@ export default function Home() {
         </section>
       </AnimatedReveal>
 
-      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
+      <Separator className="bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* TESTIMONI */}
       <AnimatedReveal id="testimoni">
@@ -326,7 +326,7 @@ export default function Home() {
                     />
                     <div className="flex gap-1">
                       {Array.from({ length: t.rating }).map((_, i) => (
-                        <HugeiconsIcon key={i} icon={StarIcon} size={14} className="text-gold" />
+                        <HugeiconsIcon key={`${t.name}-${i}`} icon={StarIcon} size={14} className="text-gold" />
                       ))}
                     </div>
                     <p className="text-sm text-charcoal/70 leading-relaxed italic">
@@ -344,7 +344,7 @@ export default function Home() {
         </section>
       </AnimatedReveal>
 
-      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
+      <Separator className="bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* KONTAK */}
       <AnimatedReveal id="kontak">
@@ -383,7 +383,7 @@ export default function Home() {
         </section>
       </AnimatedReveal>
 
-      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
+      <Separator className="bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* FOOTER */}
       <footer className="py-12 lg:py-16">
