@@ -22,8 +22,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UMKM Web Demo",
-  description: "Web demo for UMKM",
+  title: {
+    default: "UMKMKita — Naik Kelas Bareng UMKM Indonesia",
+    template: "%s | UMKMKita",
+  },
+  description:
+    "Platform pemberdayaan UMKM Indonesia. Dari produsen lokal ke pasar global — bersama kita bangun ekonomi yang lebih kuat dari akar rumput.",
+  keywords: [
+    "UMKM",
+    "UMKM Indonesia",
+    "pemberdayaan UMKM",
+    "produk lokal",
+    "usaha mikro kecil menengah",
+    "platform UMKM",
+    "Indonesia",
+    "Cirebon",
+  ],
+  authors: [{ name: "UMKMKita" }],
+  creator: "UMKMKita",
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    siteName: "UMKMKita",
+    title: "UMKMKita — Naik Kelas Bareng UMKM Indonesia",
+    description:
+      "Platform pemberdayaan UMKM Indonesia. Dari produsen lokal ke pasar global.",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UMKMKita — Naik Kelas Bareng UMKM Indonesia",
+    description:
+      "Platform pemberdayaan UMKM Indonesia. Dari produsen lokal ke pasar global.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

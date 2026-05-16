@@ -101,9 +101,30 @@ function StatCard({ value, label, icon }: Readonly<{ value: string; label: strin
   )
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "UMKMKita",
+  url: "/",
+  description:
+    "Platform pemberdayaan UMKM Indonesia yang menghubungkan pelaku usaha mikro, kecil, dan menengah dengan pasar yang lebih luas.",
+  foundingDate: "2020",
+  areaServed: "Indonesia",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+62-812-3456-7890",
+    contactType: "customer service",
+    email: "hello@umkmkita.co.id",
+  },
+}
+
 export default function Home() {
   return (
     <div className="bg-cream text-charcoal overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SiteHeader />
 
       {/* HERO */}
