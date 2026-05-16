@@ -6,12 +6,13 @@ import { CheckmarkCircle01Icon, ArrowRight01Icon } from "@hugeicons/core-free-ic
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Label } from "@/components/ui/label"
 
 export default function ContactForm() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault()
     setSubmitted(true)
   }
@@ -31,9 +32,9 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="name" className="text-xs font-medium text-charcoal/60">
+        <Label htmlFor="name" className="text-charcoal/60">
           Nama Lengkap
-        </label>
+        </Label>
         <Input
           id="name"
           type="text"
@@ -45,9 +46,9 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="email" className="text-xs font-medium text-charcoal/60">
+        <Label htmlFor="email" className="text-charcoal/60">
           Email
-        </label>
+        </Label>
         <Input
           id="email"
           type="email"
@@ -59,9 +60,9 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="message" className="text-xs font-medium text-charcoal/60">
+        <Label htmlFor="message" className="text-charcoal/60">
           Pesan
-        </label>
+        </Label>
         <Textarea
           id="message"
           required
