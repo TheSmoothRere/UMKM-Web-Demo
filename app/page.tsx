@@ -15,6 +15,9 @@ import {
 import SiteHeader from "@/components/site-header"
 import AnimatedReveal from "@/components/animated-reveal"
 import ContactForm from "@/components/contact-form"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
 
 const services = [
   {
@@ -84,13 +87,9 @@ const contactInfo = [
   { icon: Location01Icon, label: "Alamat", value: "Jl. Karamat No. 123, Cirebon, Jawa Barat" },
 ]
 
-function SectionDivider() {
-  return <div className="h-px w-full bg-linear-to-r from-transparent via-terracotta/20 to-transparent" />
-}
-
-function StatCard({ value, label, icon }: Readonly<{ value: string; label: string; icon: typeof Store04Icon }>) {
+function StatCard({ value, label, icon }: { value: string; label: string; icon: typeof Store04Icon }) {
   return (
-    <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-5 border border-charcoal/5 flex items-center gap-4">
+    <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-5 ring-1 ring-charcoal/5 flex items-center gap-4">
       <div className="size-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
         <HugeiconsIcon icon={icon} size={20} className="text-terracotta" />
       </div>
@@ -119,9 +118,9 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="animate-fade-in-up">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-terracotta/10 text-terracotta text-xs font-medium tracking-wide mb-6">
+              <Badge variant="outline" className="bg-terracotta/10 text-terracotta border-terracotta/20 mb-6 h-auto px-4 py-1.5 text-xs font-medium tracking-wide rounded-full">
                 #BanggaBuatanIndonesia
-              </span>
+              </Badge>
             </div>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-6 animate-fade-in-up animation-delay-100">
               Merek Lokal
@@ -142,7 +141,7 @@ export default function Home() {
               </a>
               <a
                 href="#tentang"
-                className="inline-flex items-center justify-center h-11 gap-1 px-8 rounded-full border border-charcoal/20 text-charcoal/80 hover:bg-charcoal/5 text-sm font-medium whitespace-nowrap transition-all"
+                className="inline-flex items-center justify-center h-11 gap-1 px-8 rounded-full ring-1 ring-charcoal/20 text-charcoal/80 hover:bg-charcoal/5 text-sm font-medium whitespace-nowrap transition-all"
               >
                 Pelajari Lebih Lanjut
               </a>
@@ -159,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      <SectionDivider />
+      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* TENTANG */}
       <AnimatedReveal id="tentang">
@@ -173,7 +172,7 @@ export default function Home() {
                   <span className="text-terracotta">Ekonomi Lokal</span>{" "}
                   Indonesia
                 </h2>
-                <div className="space-y-4 text-charcoal/60 leading-relaxed">
+                <div className="flex flex-col gap-4 text-charcoal/60 leading-relaxed">
                   <p>
                     UMKMKita adalah platform kolaboratif yang menghubungkan pelaku usaha mikro, kecil, dan menengah
                     di Indonesia dengan pasar yang lebih luas — baik domestik maupun internasional.
@@ -198,7 +197,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative">
-                <div className="aspect-4/5 rounded-3xl bg-linear-to-br from-terracotta/20 to-gold/20 border border-charcoal/5 flex items-center justify-center overflow-hidden">
+                <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-terracotta/20 to-gold/20 ring-1 ring-charcoal/5 flex items-center justify-center overflow-hidden">
                   <div className="text-center p-8">
                     <div className="size-20 rounded-2xl bg-terracotta/10 flex items-center justify-center mx-auto mb-4">
                       <HugeiconsIcon icon={Store04Icon} size={36} className="text-terracotta" />
@@ -206,7 +205,7 @@ export default function Home() {
                     <p className="text-charcoal/40 text-sm italic">Foto perusahaan akan tampil di sini</p>
                   </div>
                 </div>
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center backdrop-blur-sm max-lg:hidden">
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl bg-gold/10 ring-1 ring-gold/20 flex items-center justify-center backdrop-blur-sm max-lg:hidden">
                   <div className="text-center">
                     <div className="font-heading text-2xl font-bold text-gold">4+</div>
                     <div className="text-[10px] text-charcoal/50">Tahun Berkiprah</div>
@@ -218,7 +217,7 @@ export default function Home() {
         </section>
       </AnimatedReveal>
 
-      <SectionDivider />
+      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* LAYANAN */}
       <AnimatedReveal id="layanan">
@@ -235,23 +234,27 @@ export default function Home() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((svc) => (
-                <div
+                <Card
                   key={svc.title}
-                  className="group bg-white rounded-2xl p-6 border border-charcoal/5 hover:border-terracotta/20 transition-all duration-300 hover:shadow-lg hover:shadow-terracotta/5"
+                  className="group ring-0 bg-white rounded-2xl border border-charcoal/5 hover:border-terracotta/20 transition-all duration-300 hover:shadow-lg hover:shadow-terracotta/5"
                 >
-                  <div className="size-12 rounded-xl bg-terracotta/10 flex items-center justify-center mb-5 group-hover:bg-terracotta/15 transition-colors">
-                    <HugeiconsIcon icon={svc.icon} size={24} className="text-terracotta" />
-                  </div>
-                  <h3 className="font-heading text-lg font-semibold mb-2">{svc.title}</h3>
-                  <p className="text-sm text-charcoal/60 leading-relaxed">{svc.desc}</p>
-                </div>
+                  <CardContent className="flex flex-col gap-4 p-6">
+                    <div className="size-12 rounded-xl bg-terracotta/10 flex items-center justify-center group-hover:bg-terracotta/15 transition-colors">
+                      <HugeiconsIcon icon={svc.icon} size={24} className="text-terracotta" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-lg font-semibold text-charcoal mb-1">{svc.title}</h3>
+                      <p className="text-sm text-charcoal/60 leading-relaxed">{svc.desc}</p>
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
         </section>
       </AnimatedReveal>
 
-      <SectionDivider />
+      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* PRODUK */}
       <AnimatedReveal id="produk">
@@ -268,30 +271,33 @@ export default function Home() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
-                <div
+                <Card
                   key={product.title}
-                  className="group bg-white rounded-2xl overflow-hidden border border-charcoal/5 hover:shadow-lg hover:shadow-terracotta/5 transition-all duration-300"
+                  className="group ring-0 bg-white rounded-2xl overflow-hidden border border-charcoal/5 hover:shadow-lg hover:shadow-terracotta/5 transition-all duration-300"
                 >
-                  <div className="aspect-4/3 bg-linear-to-br from-terracotta/10 to-gold/10 flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-terracotta/10 to-gold/10 flex items-center justify-center relative overflow-hidden rounded-t-lg">
                     <div className="size-16 rounded-xl bg-terracotta/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                       <HugeiconsIcon icon={ShoppingBag01Icon} size={28} className="text-terracotta" />
                     </div>
-                    <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/80 backdrop-blur-sm text-[11px] font-medium text-charcoal/70">
+                    <Badge
+                      variant="outline"
+                      className="absolute top-3 left-3 bg-white/80 backdrop-blur-sm border-charcoal/10 text-charcoal/70 text-[11px] font-medium"
+                    >
                       {product.tag}
-                    </span>
+                    </Badge>
                   </div>
-                  <div className="p-6">
-                    <h3 className="font-heading text-lg font-semibold mb-2">{product.title}</h3>
+                  <CardContent className="flex flex-col gap-2 p-6">
+                    <h3 className="font-heading text-lg font-semibold text-charcoal">{product.title}</h3>
                     <p className="text-sm text-charcoal/60 leading-relaxed">{product.desc}</p>
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
         </section>
       </AnimatedReveal>
 
-      <SectionDivider />
+      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* TESTIMONI */}
       <AnimatedReveal id="testimoni">
@@ -308,32 +314,37 @@ export default function Home() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {testimonials.map((t) => (
-                <div key={t.name} className="bg-white rounded-2xl p-7 border border-charcoal/5 relative">
-                  <HugeiconsIcon
-                    icon={QuoteUpIcon}
-                    size={24}
-                    className="text-terracotta/15 absolute top-5 right-6"
-                  />
-                  <div className="flex gap-1 mb-5">
-                    {Array.from({ length: t.rating }).map((_, i) => (
-                      <HugeiconsIcon key={`${t.name}-${i}`} icon={StarIcon} size={14} className="text-gold" />
-                    ))}
-                  </div>
-                  <p className="text-sm text-charcoal/70 leading-relaxed mb-6 italic">
-                    &ldquo;{t.quote}&rdquo;
-                  </p>
-                  <div>
-                    <div className="font-heading text-sm font-semibold">{t.name}</div>
-                    <div className="text-xs text-charcoal/40 mt-0.5">{t.role}</div>
-                  </div>
-                </div>
+                <Card
+                  key={t.name}
+                  className="ring-0 bg-white rounded-2xl border border-charcoal/5 relative"
+                >
+                  <CardContent className="flex flex-col gap-4 p-7">
+                    <HugeiconsIcon
+                      icon={QuoteUpIcon}
+                      size={24}
+                      className="text-terracotta/15 absolute top-5 right-6"
+                    />
+                    <div className="flex gap-1">
+                      {Array.from({ length: t.rating }).map((_, i) => (
+                        <HugeiconsIcon key={i} icon={StarIcon} size={14} className="text-gold" />
+                      ))}
+                    </div>
+                    <p className="text-sm text-charcoal/70 leading-relaxed italic">
+                      &ldquo;{t.quote}&rdquo;
+                    </p>
+                    <div>
+                      <div className="font-heading text-sm font-semibold text-charcoal">{t.name}</div>
+                      <div className="text-xs text-charcoal/40 mt-0.5">{t.role}</div>
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
         </section>
       </AnimatedReveal>
 
-      <SectionDivider />
+      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* KONTAK */}
       <AnimatedReveal id="kontak">
@@ -348,7 +359,7 @@ export default function Home() {
                 <p className="text-charcoal/60 leading-relaxed mb-10">
                   Punya pertanyaan atau ingin bergabung? Tim kami siap membantu Anda.
                 </p>
-                <div className="space-y-5">
+                <div className="flex flex-col gap-5">
                   {contactInfo.map((item) => (
                     <div key={item.label} className="flex items-center gap-4">
                       <div className="size-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
@@ -362,15 +373,17 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className="bg-white rounded-2xl p-8 border border-charcoal/5">
-                <ContactForm />
-              </div>
+              <Card className="ring-0 bg-white rounded-2xl border border-charcoal/5">
+                <CardContent className="p-8">
+                  <ContactForm />
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
       </AnimatedReveal>
 
-      <SectionDivider />
+      <Separator className="bg-gradient-to-r from-transparent via-terracotta/20 to-transparent" />
 
       {/* FOOTER */}
       <footer className="py-12 lg:py-16">
@@ -414,7 +427,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="pt-8 border-t border-charcoal/5 text-center text-xs text-charcoal/40">
+          <Separator className="bg-charcoal/5 mb-8" />
+          <div className="text-center text-xs text-charcoal/40">
             &copy; {new Date().getFullYear()} UMKMKita. All rights reserved.
           </div>
         </div>
