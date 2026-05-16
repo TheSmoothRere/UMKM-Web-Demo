@@ -1,0 +1,55 @@
+# .graphifyignore - Files and patterns to exclude from graphify processing
+
+# Node modules
+node_modules/
+
+# Build artifacts
+.next/
+out/
+dist/
+build/
+
+# Lockfiles
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+*.log
+*.tmp
+*.cache
+
+# Test files
+**/__tests__/
+**/*.test.*
+**/*.spec.*
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.bak
+*.backup
+*.orig
+*.rej
+
+# Graphify output (prevent self-processing)
+graphify-out/
