@@ -9,10 +9,27 @@ export function LogoIcon({ className, size = 16 }: Readonly<{ className?: string
       className={className}
       aria-hidden="true"
     >
-      <path d="M60 6 L74 20 L60 34 L46 20 Z" fill="#D4A853" />
-      <path d="M60 24 L8 60 L112 60 Z" fill="#C7522B" />
-      <rect x="14" y="60" width="92" height="44" rx="4" fill="#C7522B" />
-      <rect x="46" y="76" width="28" height="28" rx="3" fill="#FDF8F3" />
+      <path
+        d="M12 95 L60 25 L108 95"
+        stroke="#1A1A2E"
+        strokeWidth={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M30 95 L60 45 L90 95"
+        stroke="#C7522B"
+        strokeWidth={8}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M46 95 L60 65 L74 95"
+        stroke="#D4A853"
+        strokeWidth={6}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }

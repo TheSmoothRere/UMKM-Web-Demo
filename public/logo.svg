@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" fill="none">
-  <title>UMKMKita</title>
-  <path d="M60 6 L74 20 L60 34 L46 20 Z" fill="#D4A853"/>
-  <path d="M60 24 L8 60 L112 60 Z" fill="#C7522B"/>
-  <rect x="14" y="60" width="92" height="44" rx="4" fill="#C7522B"/>
-  <rect x="46" y="76" width="28" height="28" rx="3" fill="#FDF8F3"/>
-  <text x="138" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="700" fill="#1A1A2E" letter-spacing="-0.02em">UMKM</text>
-  <text x="280" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="700" fill="#C7522B" letter-spacing="-0.02em">Kita</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" fill="none" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">UMKMKita</title>
+  <desc id="logo-desc">UMKMKita logo with abstract mark and wordmark</desc>
+  <g id="logo-mark">
+    <path d="M12 95 L60 25 L108 95" stroke="#1A1A2E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 95 L60 45 L90 95" stroke="#C7522B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 95 L60 65 L74 95" stroke="#D4A853" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="logo-wordmark">
+    <text x="130" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="700" fill="#1A1A2E" letter-spacing="-0.02em">UMKM</text>
+    <text x="272" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="700" fill="#C7522B" letter-spacing="-0.02em">Kita</text>
+  </g>
 </svg>
