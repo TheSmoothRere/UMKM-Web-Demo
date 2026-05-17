@@ -1,16 +1,16 @@
 # Graph Report - umkm-web-demo  (2026-05-17)
 
 ## Corpus Check
-- 24 files · ~4,619 words
+- 25 files · ~4,819 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 125 nodes · 143 edges · 27 communities (13 shown, 14 thin omitted)
+- 127 nodes · 148 edges · 27 communities (13 shown, 14 thin omitted)
 - Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7cd5c161`
+- Built from commit: `5c62d8d7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -79,7 +79,7 @@ Nodes (18): Badge, badgeVariants, Button, buttonVariants, Card, CardHeader, cn, 
 Cohesion: 0.14
 Nodes (19): Project Conventions, Stack Overview, HugeIcons React, Metadata Configuration, Root Layout Component, Not Found Page Component, Home Page Component, StatCard Component (+11 more)
 
-### Community 3 - "Form Handling & State Management"
+### Community 4 - "Agent & Project Documentation"
 Cohesion: 0.27
 Nodes (3): Sheet(), SheetClose(), SheetTrigger()
 
@@ -108,9 +108,9 @@ Nodes (3): ESLint Configuration, Next.js TypeScript ESLint Config, Next.js Core 
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `cn()` connect `UMKMKita Platform Features` to `UI Components & Styling`, `Form Handling & State Management`, `Agent & Project Documentation`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Why does `Button` connect `UI Components & Styling` to `UMKMKita Platform Features`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **Are the 5 inferred relationships involving `Home Page Component` (e.g. with `UMKMKita Platform` and `UMKMKita Services`) actually correct?**
   _`Home Page Component` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Sections`, `Tech Stack`, `code:block1 (app/page.tsx          → Server component (SSG) — all static )` to the rest of the system?**

@@ -154,16 +154,16 @@
       "source_file": "app/page.tsx",
       "source_location": "L1",
       "id": "app_page_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "page.tsx"
     },
     {
       "label": "StatCard()",
       "file_type": "code",
       "source_file": "app/page.tsx",
-      "source_location": "L90",
+      "source_location": "L91",
       "id": "app_page_statcard",
-      "community": 4,
+      "community": 3,
       "norm_label": "statcard()"
     },
     {
@@ -226,16 +226,16 @@
       "source_file": "components/site-header.tsx",
       "source_location": "L1",
       "id": "components_site_header_tsx",
-      "community": 3,
+      "community": 4,
       "norm_label": "site-header.tsx"
     },
     {
       "label": "onScroll()",
       "file_type": "code",
       "source_file": "components/site-header.tsx",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "components_site_header_onscroll",
-      "community": 3,
+      "community": 4,
       "norm_label": "onscroll()"
     },
     {
@@ -244,7 +244,7 @@
       "source_file": "components/animated-reveal.tsx",
       "source_location": "L1",
       "id": "components_animated_reveal_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "animated-reveal.tsx"
     },
     {
@@ -253,7 +253,7 @@
       "source_file": "components/animated-reveal.tsx",
       "source_location": "L5",
       "id": "components_animated_reveal_animatedreveal",
-      "community": 4,
+      "community": 3,
       "norm_label": "animatedreveal()"
     },
     {
@@ -298,7 +298,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L1",
       "id": "components_ui_card_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "card.tsx"
     },
     {
@@ -307,7 +307,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L14",
       "id": "ui_card_cn",
-      "community": 4,
+      "community": 3,
       "norm_label": "cn()"
     },
     {
@@ -316,7 +316,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L46",
       "id": "ui_card_carddescription",
-      "community": 4,
+      "community": 3,
       "norm_label": "carddescription()"
     },
     {
@@ -325,7 +325,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L56",
       "id": "ui_card_cardaction",
-      "community": 4,
+      "community": 3,
       "norm_label": "cardaction()"
     },
     {
@@ -334,7 +334,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L1",
       "id": "components_ui_badge_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "badge.tsx"
     },
     {
@@ -343,7 +343,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L30",
       "id": "ui_badge_badge",
-      "community": 4,
+      "community": 3,
       "norm_label": "badge()"
     },
     {
@@ -442,7 +442,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L1",
       "id": "components_ui_sheet_tsx",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheet.tsx"
     },
     {
@@ -451,7 +451,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L11",
       "id": "ui_sheet_sheet",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheet()"
     },
     {
@@ -460,7 +460,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L15",
       "id": "ui_sheet_sheettrigger",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheettrigger()"
     },
     {
@@ -469,7 +469,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L19",
       "id": "ui_sheet_sheetclose",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheetclose()"
     },
     {
@@ -478,7 +478,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L23",
       "id": "ui_sheet_sheetportal",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheetportal()"
     },
     {
@@ -487,7 +487,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L56",
       "id": "ui_sheet_cn",
-      "community": 3,
+      "community": 4,
       "norm_label": "cn()"
     },
     {
@@ -496,7 +496,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L103",
       "id": "ui_sheet_sheettitle",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheettitle()"
     },
     {
@@ -505,8 +505,26 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L116",
       "id": "ui_sheet_sheetdescription",
-      "community": 3,
+      "community": 4,
       "norm_label": "sheetdescription()"
+    },
+    {
+      "label": "logo-icon.tsx",
+      "file_type": "code",
+      "source_file": "components/ui/logo-icon.tsx",
+      "source_location": "L1",
+      "id": "components_ui_logo_icon_tsx",
+      "community": 3,
+      "norm_label": "logo-icon.tsx"
+    },
+    {
+      "label": "LogoIcon()",
+      "file_type": "code",
+      "source_file": "components/ui/logo-icon.tsx",
+      "source_location": "L1",
+      "id": "ui_logo_icon_logoicon",
+      "community": 3,
+      "norm_label": "logoicon()"
     },
     {
       "label": "utils.ts",
@@ -1537,6 +1555,28 @@
       "source_file": "app/page.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "source": "app_page_tsx",
+      "target": "components_ui_logo_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "app_page_tsx",
+      "target": "ui_logo_icon_logoicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "app_page_tsx",
       "target": "components_ui_card_tsx"
@@ -1633,7 +1673,7 @@
       "source_location": "L6",
       "weight": 1.0,
       "source": "components_site_header_tsx",
-      "target": "components_ui_sheet_tsx",
+      "target": "components_ui_logo_icon_tsx",
       "confidence_score": 1.0
     },
     {
@@ -1644,8 +1684,19 @@
       "source_location": "L6",
       "weight": 1.0,
       "source": "components_site_header_tsx",
-      "target": "ui_sheet_sheet",
+      "target": "ui_logo_icon_logoicon",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/site-header.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_site_header_tsx",
+      "target": "components_ui_sheet_tsx"
     },
     {
       "relation": "imports",
@@ -1654,9 +1705,9 @@
       "source_file": "components/site-header.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_site_header_tsx",
-      "target": "ui_sheet_sheettrigger",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheet"
     },
     {
       "relation": "imports",
@@ -1665,9 +1716,20 @@
       "source_file": "components/site-header.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_site_header_tsx",
-      "target": "ui_sheet_sheetclose",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheettrigger"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/site-header.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_site_header_tsx",
+      "target": "ui_sheet_sheetclose"
     },
     {
       "relation": "contains",
@@ -1740,9 +1802,9 @@
       "source_file": "components/contact-form.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_contact_form_tsx",
-      "target": "components_ui_label_tsx",
-      "confidence_score": 1.0
+      "target": "components_ui_label_tsx"
     },
     {
       "relation": "contains",
@@ -1804,9 +1866,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "components_ui_button_tsx"
     },
     {
       "relation": "imports_from",
@@ -2049,9 +2111,9 @@
       "source_file": "components/ui/label.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_label_tsx",
-      "target": "lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2060,9 +2122,9 @@
       "source_file": "components/ui/label.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_label_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2070,9 +2132,9 @@
       "source_file": "components/ui/label.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_label_tsx",
-      "target": "ui_label_cn",
-      "confidence_score": 1.0
+      "target": "ui_label_cn"
     },
     {
       "relation": "imports_from",
@@ -2081,9 +2143,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2092,9 +2154,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2102,9 +2164,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_sheet",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheet"
     },
     {
       "relation": "contains",
@@ -2112,9 +2174,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_sheettrigger",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheettrigger"
     },
     {
       "relation": "contains",
@@ -2122,9 +2184,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_sheetclose",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheetclose"
     },
     {
       "relation": "contains",
@@ -2132,9 +2194,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_sheetportal",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheetportal"
     },
     {
       "relation": "contains",
@@ -2142,9 +2204,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_cn",
-      "confidence_score": 1.0
+      "target": "ui_sheet_cn"
     },
     {
       "relation": "contains",
@@ -2152,9 +2214,9 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_sheettitle",
-      "confidence_score": 1.0
+      "target": "ui_sheet_sheettitle"
     },
     {
       "relation": "contains",
@@ -2162,8 +2224,18 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_ui_sheet_tsx",
-      "target": "ui_sheet_sheetdescription",
+      "target": "ui_sheet_sheetdescription"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ui/logo-icon.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_ui_logo_icon_tsx",
+      "target": "ui_logo_icon_logoicon",
       "confidence_score": 1.0
     },
     {
@@ -3027,5 +3099,5 @@
       "source_file": "components/ui/card.tsx"
     }
   ],
-  "built_at_commit": "7cd5c16182ec7aee077fa4dba2a5c545f22b2a82"
+  "built_at_commit": "5c62d8d7337986b6345179b4dd356d4f146737b7"
 }

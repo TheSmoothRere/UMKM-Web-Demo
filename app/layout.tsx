@@ -3,6 +3,11 @@ import { Geist, Geist_Mono, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
+const basePath = isGithubActions && repoName ? `/${repoName}` : "";
+const iconPath = `${basePath}/icon.svg`;
+
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const playfairDisplay = Playfair_Display({
@@ -60,7 +65,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/icon.svg",
+    icon: iconPath,
   },
 };
 
