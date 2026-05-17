@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Store04Icon, Menu01Icon } from "@hugeicons/core-free-icons";
+import { Menu01Icon } from "@hugeicons/core-free-icons";
+import { LogoIcon } from "@/components/ui/logo-icon";
 import {
   Sheet,
   SheetTrigger,
@@ -37,9 +38,7 @@ export default function SiteHeader() {
     >
       <nav className="container flex items-center justify-between h-16 lg:h-20">
         <a href="#beranda" className="flex items-center gap-2">
-          <div className="size-8 rounded-lg bg-terracotta flex items-center justify-center">
-            <HugeiconsIcon icon={Store04Icon} size={16} color="white" />
-          </div>
+          <LogoIcon size={32} />
           <span className="font-heading text-lg font-semibold tracking-tight">
             UMKM<span className="text-terracotta">Kita</span>
           </span>
@@ -73,9 +72,7 @@ export default function SiteHeader() {
           <SheetContent side="right" className="w-72">
             <SheetHeader>
               <a href="#beranda" className="flex items-center gap-2">
-                <div className="size-8 rounded-lg bg-terracotta flex items-center justify-center">
-                  <HugeiconsIcon icon={Store04Icon} size={16} color="white" />
-                </div>
+                <LogoIcon size={32} />
                 <span className="font-heading text-lg font-semibold tracking-tight">
                   UMKM<span className="text-terracotta">Kita</span>
                 </span>

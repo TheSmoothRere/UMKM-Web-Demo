@@ -15,6 +15,7 @@ import {
 import SiteHeader from "@/components/site-header"
 import AnimatedReveal from "@/components/animated-reveal"
 import ContactForm from "@/components/contact-form"
+import { LogoIcon } from "@/components/ui/logo-icon"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
@@ -412,9 +413,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             <div className="sm:col-span-2 lg:col-span-2">
               <a href="#beranda" className="flex items-center gap-2 mb-4">
-                <div className="size-8 rounded-lg bg-terracotta flex items-center justify-center">
-                  <HugeiconsIcon icon={Store04Icon} size={16} color="white" />
-                </div>
+                <LogoIcon size={32} />
                 <span className="font-heading text-lg font-semibold tracking-tight">
                   UMKM<span className="text-terracotta">Kita</span>
                 </span>
