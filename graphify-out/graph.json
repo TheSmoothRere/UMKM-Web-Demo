@@ -518,15 +518,6 @@
       "norm_label": "logo-icon.tsx"
     },
     {
-      "label": "LogoIcon()",
-      "file_type": "code",
-      "source_file": "components/ui/logo-icon.tsx",
-      "source_location": "L1",
-      "id": "ui_logo_icon_logoicon",
-      "community": 3,
-      "norm_label": "logoicon()"
-    },
-    {
       "label": "utils.ts",
       "file_type": "code",
       "source_file": "lib/utils.ts",
@@ -687,6 +678,15 @@
       "id": "umkm_web_demo_agents_build_artifacts",
       "community": 6,
       "norm_label": "build artifacts"
+    },
+    {
+      "label": "LogoIcon()",
+      "file_type": "code",
+      "source_file": "components/ui/logo-icon.tsx",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "logoicon()",
+      "id": "ui_logo_icon_logoicon"
     },
     {
       "label": "ESLint Configuration",
@@ -3099,5 +3099,5 @@
       "source_file": "components/ui/card.tsx"
     }
   ],
-  "built_at_commit": "93459ba84f3a6fa81d6fb8090566567a3c7756fb"
+  "built_at_commit": "f930fd6ce3c95e846a79d040baf50a076974cb48"
 }

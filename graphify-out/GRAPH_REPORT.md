@@ -1,7 +1,7 @@
 # Graph Report - umkm-web-demo  (2026-05-17)
 
 ## Corpus Check
-- 25 files · ~4,862 words
+- 25 files · ~4,903 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `93459ba8`
+- Built from commit: `f930fd6c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
