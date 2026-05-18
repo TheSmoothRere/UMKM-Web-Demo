@@ -131,42 +131,6 @@
       "norm_label": "next-env.d.ts"
     },
     {
-      "label": "layout.tsx",
-      "file_type": "code",
-      "source_file": "app/layout.tsx",
-      "source_location": "L1",
-      "id": "app_layout_tsx",
-      "community": 2,
-      "norm_label": "layout.tsx"
-    },
-    {
-      "label": "RootLayout()",
-      "file_type": "code",
-      "source_file": "app/layout.tsx",
-      "source_location": "L72",
-      "id": "app_layout_rootlayout",
-      "community": 2,
-      "norm_label": "rootlayout()"
-    },
-    {
-      "label": "page.tsx",
-      "file_type": "code",
-      "source_file": "app/page.tsx",
-      "source_location": "L1",
-      "id": "app_page_tsx",
-      "community": 3,
-      "norm_label": "page.tsx"
-    },
-    {
-      "label": "StatCard()",
-      "file_type": "code",
-      "source_file": "app/page.tsx",
-      "source_location": "L91",
-      "id": "app_page_statcard",
-      "community": 3,
-      "norm_label": "statcard()"
-    },
-    {
       "label": "not-found.tsx",
       "file_type": "code",
       "source_file": "app/not-found.tsx",
@@ -219,6 +183,42 @@
       "id": "app_robots_robots",
       "community": 10,
       "norm_label": "robots()"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "id": "app_layout_tsx",
+      "community": 2,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L75",
+      "id": "app_layout_rootlayout",
+      "community": 2,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "id": "app_page_tsx",
+      "community": 3,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "StatCard()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L91",
+      "id": "app_page_statcard",
+      "community": 3,
+      "norm_label": "statcard()"
     },
     {
       "label": "site-header.tsx",
@@ -1487,6 +1487,47 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/not-found.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_not_found_tsx",
+      "target": "components_ui_empty_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/not-found.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_not_found_tsx",
+      "target": "app_not_found_notfound"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_sitemap_ts",
+      "target": "app_sitemap_sitemap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_robots_ts",
+      "target": "app_robots_robots"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -1623,47 +1664,6 @@
       "confidence_score": 1.0,
       "source": "app_page_tsx",
       "target": "app_page_statcard"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/not-found.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_not_found_tsx",
-      "target": "components_ui_empty_tsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/not-found.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_not_found_tsx",
-      "target": "app_not_found_notfound"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/sitemap.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_sitemap_ts",
-      "target": "app_sitemap_sitemap"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/robots.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "app_robots_ts",
-      "target": "app_robots_robots"
     },
     {
       "relation": "imports_from",
@@ -3099,5 +3099,5 @@
       "source_file": "components/ui/card.tsx"
     }
   ],
-  "built_at_commit": "1098601cc0556c6e8ef0898d0b567ecbc9ea3406"
+  "built_at_commit": "e2bf344695468c5e8141e6be986ccf58206e4524"
 }
